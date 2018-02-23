@@ -5,10 +5,9 @@ import org.junit.Test;
 public class WhichAreIn { 
     public static String[] inArray(String[] array1, String[] array2) {
        List<String> results = new ArrayList<String>();
-        for (String a : array1) {
-            for (String b : array2) {
-                if (b.contains(a)) {
-                    System.out.print(a + "\n");
+        for (String a1 : array1) {
+            for (String a2 : array2) {
+                if (a2.contains(a1)) {
                     results.add(a);
                     break;
                 }
@@ -19,4 +18,3 @@ public class WhichAreIn {
         return r;
     }
 }
-
